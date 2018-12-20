@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/LayoutBG"
+    tools:context=".ProfileActivity">
+
+
+
+    <ScrollView
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollcmp"
+        android:padding="0dp">
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:background="@android:color/white"
+            android:padding="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Scroll_lay3"
+            android:layout_gravity="center_horizontal">
+
+
+
+            <RelativeLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                >
+
+                <LinearLayout
+                    android:layout_marginTop="0dp"
+                    android:id="@+id/editprof"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end">
+
+                    <ImageView
+                        android:clickable="true"
+                        android:id="@+id/editprofile"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/edit"/>
+
+                </LinearLayout>
+
+
+                <FrameLayout
+                    android:id="@+id/userprofpic"
+                    android:padding="10dp"
+                    android:layout_below="@+id/editprof"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginTop="20dp"
+                    app:cardElevation="1dp"
+                    android:padding="10dp"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    app:cardCornerRadius="70dp"
+                    app:cardBackgroundColor="@color/layoutBG">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="B"
+                        android:textColor="@color/headerfont"
+                        android:textSize="40dp"
+                        android:textStyle="bold" />
+
+                </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="bottom|end"
+                        app:cardCornerRadius="20dp"
+                        android:layout_margin="2dp"
+                        app:cardElevation="3dp"
+                        >
+
+                        <ImageView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/camera1"
+                            android:scaleType="centerCrop"/>
+
+
+
+                    </android.support.v7.widget.CardView>
+
+
+                </FrameLayout>
+
+
+                <TextView
+                    android:textColor="@color/headerfont"
+                    android:layout_below="@+id/userprofpic"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Admin Name"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:padding="10dp"
+                    android:id="@+id/cmpnyname"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_horizontal"
+                    android:hint="Company ID"
+                    android:padding="10dp"
+                    android:id="@+id/profcmpnyid"
+                    android:layout_below="@id/cmpnyname"/>
+                <TextView
+                    android:layout_marginTop="25dp"
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:layout_height="50dp"
+                    android:hint="Contact Person"
+                    android:id="@+id/cntctpersn"
+                    android:layout_below="@id/profcmpnyid"/>
+
+                <TextView
+                    android:layout_marginTop="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:hint="Trade Liscence"
+                    android:id="@+id/tradelis"
+                    android:layout_below="@id/cntctpersn"/>
+                <TextView
+                    android:layout_marginTop="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/tradelis"
+                    android:padding="10dp"
+                    android:id="@+id/tradeexp"
+                    android:hint="Trade Lisence Expiry"/>
+
+                <TextView
+                    android:layout_marginTop="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/tradeexp"
+                    android:id="@+id/trn"
+                    android:padding="10dp"
+                    android:hint="TRN"/>
+                <TextView
+                    android:padding="10dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/trn"
+                    android:id="@+id/labrcardno"
+                    android:hint="Labour Card Number"/>
+
+
+                <TextView
+                    android:padding="10dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/labrcardno"
+                    android:id="@+id/immigratncardno"
+                    android:hint="Immigration Card Number"/>
+
+                <TextView
+                    android:padding="10dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/immigratncardno"
+                    android:id="@+id/immigratnexp"
+                    android:hint="Immigration Card Expiry"/>
+
+                <TextView
+                    android:padding="10dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/immigratnexp"
+                    android:id="@+id/tenancy"
+                    android:hint="Tenancy"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

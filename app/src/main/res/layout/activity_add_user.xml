@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_gravity="center_horizontal"
+    android:layout_height="match_parent"
+    tools:context=".AddUser">
+
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+
+
+        >
+
+        <EditText
+            android:padding="10dp"
+            android:background="@color/gridbg"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="User Name"
+            android:id="@+id/usrname"/>
+
+        <EditText
+            android:padding="10dp"
+            android:background="@color/gridbg"
+            android:layout_marginTop="20dp"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="User Type"
+            android:layout_below="@id/usrname"
+            android:id="@+id/usrtype"
+            />
+
+        <EditText
+            android:padding="10dp"
+            android:background="@color/gridbg"
+            android:layout_marginTop="20dp"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="Company Name"
+            android:layout_below="@id/usrtype"
+            android:id="@+id/usrcmpny"
+            />
+
+        <EditText
+            android:padding="10dp"
+            android:background="@color/gridbg"
+            android:layout_marginTop="20dp"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="Company ID"
+            android:layout_below="@id/usrcmpny"
+            android:id="@+id/usrcmpnyid"
+            />
+        <EditText
+            android:padding="10dp"
+            android:background="@color/gridbg"
+            android:layout_marginTop="20dp"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="Contact Number"
+            android:layout_below="@id/usrcmpnyid"
+            android:id="@+id/usr_contact_no"
+            />
+
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/usr_contact_no"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_margin="10dp"
+                android:background="@drawable/tvborder2"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/user_submit"
+                android:textColor="@color/secondary"
+                android:textStyle="bold"
+                android:text="Submit"
+                android:gravity="center"/>
+        </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
